@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GrowViaa | Brand to Business</title>
+<meta name="description" content="GrowViaa helps brands take products and requirements to the right market through research, customer mapping, strategy and market execution.">
+<style>
+:root{--navy:#071d35;--green:#20a447;--light:#f5f8fb;--text:#17283b;--muted:#637487;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff}
+a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid #e7edf2}
+.navin{max-width:1180px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;font-size:29px;color:var(--navy)}.logo span{color:var(--green)}.tag{font-size:11px;letter-spacing:2px;color:#506070;margin-top:-3px}
+.links{display:flex;gap:22px;font-size:14px;font-weight:700}.links a:hover{color:var(--green)}
+.hero{background:linear-gradient(120deg,#f7fbff 0%,#eef7f1 52%,#e5f0fb 100%);padding:80px 22px 70px;overflow:hidden}.heroIn{max-width:1180px;margin:auto;display:grid;grid-template-columns:1.08fr .92fr;gap:45px;align-items:center}
+.eyebrow{color:var(--green);font-weight:800;letter-spacing:2px}.hero h1{font-size:64px;line-height:.98;margin:13px 0 20px;color:var(--navy)}.hero h1 span{color:var(--green)}.hero p{font-size:19px;line-height:1.6;color:var(--muted);max-width:650px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{padding:14px 21px;border-radius:9px;font-weight:800;display:inline-block}.primary{background:var(--green);color:#fff}.secondary{border:1px solid #b9c8d5;background:#fff}.heroCard{min-height:430px;border-radius:24px;background:linear-gradient(145deg,#071d35,#123d5e);color:#fff;padding:38px;box-shadow:0 25px 60px rgba(7,29,53,.22);position:relative;overflow:hidden}.heroCard:after{content:"";position:absolute;width:330px;height:330px;border-radius:50%;right:-110px;bottom:-120px;background:rgba(32,164,71,.35)}.heroCard h2{font-size:37px;margin:0 0 25px}.metric{display:grid;grid-template-columns:1fr 1fr;gap:14px}.metric div{border:1px solid rgba(255,255,255,.18);padding:18px;border-radius:14px;background:rgba(255,255,255,.07)}.metric b{display:block;font-size:25px;color:#7be39b;margin-bottom:5px}
+section{padding:75px 22px}.container{max-width:1180px;margin:auto}.sectionTitle{text-align:center;max-width:750px;margin:0 auto 45px}.sectionTitle h2{font-size:40px;margin:0 0 12px;color:var(--navy)}.sectionTitle p{color:var(--muted);line-height:1.6}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{padding:26px;border:1px solid #e4ebf1;border-radius:17px;background:#fff;box-shadow:0 8px 25px rgba(12,35,55,.06)}.icon{width:48px;height:48px;border-radius:13px;background:#e9f7ee;color:var(--green);display:grid;place-items:center;font-size:24px;font-weight:800}.card h3{margin:18px 0 9px}.card p{color:var(--muted);line-height:1.55;font-size:14px}
+.dark{background:var(--navy);color:#fff}.dark .sectionTitle h2,.dark .sectionTitle p{color:#fff}.dark .sectionTitle p{opacity:.78}.process{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.step{padding:26px;border-radius:18px;background:#102d48;border:1px solid #234762}.step b{color:#73dc93;font-size:13px}.step h3{font-size:21px;margin:12px 0}.step p{opacity:.78;line-height:1.55;font-size:14px}
+.industry{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.industry div{padding:22px 12px;text-align:center;border-radius:15px;background:#f4f8fb;font-weight:800;font-size:14px;min-height:90px;display:grid;place-items:center}
+.approach{display:grid;grid-template-columns:1fr 1fr;gap:22px}.quote{padding:38px;border-radius:20px;background:linear-gradient(135deg,#eaf8ef,#f4f9fd);font-size:25px;font-weight:800;line-height:1.35;color:var(--navy)}.list{padding:10px 0}.list div{padding:15px 0;border-bottom:1px solid #e5ebf0}.list b{color:var(--green)}
+.cta{background:linear-gradient(110deg,#071d35,#0d3b5b 60%,#126d3a);color:#fff;text-align:center}.cta h2{font-size:46px;margin:0 0 15px}.cta p{opacity:.82;font-size:18px}.contact{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;margin-top:25px;font-weight:800}
+footer{background:#041423;color:#b8c6d2;padding:24px;text-align:center;font-size:13px}
+.chatBtn{position:fixed;right:22px;bottom:22px;width:62px;height:62px;border:0;border-radius:50%;background:var(--green);color:#fff;font-size:27px;box-shadow:0 10px 30px rgba(0,0,0,.22);cursor:pointer;z-index:50}
+.chat{position:fixed;right:22px;bottom:95px;width:340px;max-width:calc(100vw - 30px);background:#fff;border-radius:18px;box-shadow:0 20px 60px rgba(0,0,0,.25);overflow:hidden;display:none;z-index:49;border:1px solid #e2e9ef}.chat.open{display:block}.chatHead{background:var(--navy);color:#fff;padding:17px;font-weight:800}.chatBody{padding:16px;max-height:370px;overflow:auto}.bot{background:#f0f5f8;padding:12px;border-radius:12px;line-height:1.45;font-size:14px;margin-bottom:10px}.choices{display:grid;gap:8px}.choices button{border:1px solid #d7e2ea;background:#fff;padding:10px;border-radius:9px;text-align:left;cursor:pointer}.choices button:hover{border-color:var(--green);color:var(--green)}.chatFoot{padding:12px;border-top:1px solid #e7edf2;font-size:12px;color:#687887}.chatFoot a{color:var(--green);font-weight:800}
+@media(max-width:850px){.links{display:none}.heroIn{grid-template-columns:1fr}.hero h1{font-size:46px}.cards,.process{grid-template-columns:1fr 1fr}.industry{grid-template-columns:repeat(2,1fr)}.approach{grid-template-columns:1fr}.sectionTitle h2{font-size:32px}}
+@media(max-width:520px){.cards,.process{grid-template-columns:1fr}.hero{padding-top:55px}.heroCard{min-height:auto}.cta h2{font-size:34px}}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="navin">
+<a href="#" aria-label="GrowViaa"><div class="logo">Grow<span>Viaa</span><div class="tag">BRAND TO BUSINESS</div></div></a>
+<div class="links"><a href="#about">About</a><a href="#usp">USP</a><a href="#process">How We Work</a><a href="#industries">Industries</a><a href="#contact">Contact</a></div>
+</div></nav>
+
+<header class="hero"><div class="heroIn">
+<div><div class="eyebrow">IDEAS • RESEARCH • MARKETS • GROWTH</div>
+<h1>Your Brand.<br><span>Our Expertise.</span></h1>
+<p>We help businesses take their brand, products and requirements into the right market through research, customer mapping, strategic solutions and market execution.</p>
+<div class="btns"><a class="btn primary" href="#contact">Let's Grow Together</a><a class="btn secondary" href="https://wa.me/919236931034" target="_blank">WhatsApp Us</a></div></div>
+<div class="heroCard"><h2>From Research to Real Market Growth.</h2><div class="metric">
+<div><b>17+</b>Years of business & market experience</div>
+<div><b>R&D</b>Research-led product understanding</div>
+<div><b>Right</b>Customer & decision-maker mapping</div>
+<div><b>Pan India</b>Market approach by segment</div>
+</div></div>
+</div></header>
+
+<section id="about"><div class="container"><div class="sectionTitle"><h2>We Become Your Extended Business Team</h2><p>GrowViaa approaches the market where your business needs support—without the cost and complexity of building a separate market team.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">01</div><h3>Market Research</h3><p>Understand market potential, competitors, product fit and customer requirements before taking action.</p></div>
+<div class="card"><div class="icon">02</div><h3>Customer Mapping</h3><p>Identify the right buyers, decision makers, partners and channels for your offering.</p></div>
+<div class="card"><div class="icon">03</div><h3>Market Approach</h3><p>Build a focused approach by industry, geography, customer segment and product requirement.</p></div>
+<div class="card"><div class="icon">04</div><h3>Execution</h3><p>Support meetings, business development, follow-ups and opportunities through consistent market engagement.</p></div>
+</div></div></section>
+
+<section id="usp" class="dark"><div class="container"><div class="sectionTitle"><h2>Our USP</h2><p>Research + Experience + Right Customer + Right Solution = Market Opportunity.</p></div>
+<div class="process">
+<div class="step"><b>01 • RESEARCH</b><h3>Research & Development</h3><p>Deep market and product research to understand where and how your product can win.</p></div>
+<div class="step"><b>02 • CONNECT</b><h3>Right Customer</h3><p>Connect the brand with relevant customers, decision makers and business partners.</p></div>
+<div class="step"><b>03 • SOLVE</b><h3>Right Solution</h3><p>Convert requirements into a practical commercial and market approach.</p></div>
+<div class="step"><b>04 • GROW</b><h3>Market Growth</h3><p>Build repeat opportunities and long-term business relationships.</p></div>
+</div></div></section>
+
+<section id="process"><div class="container"><div class="sectionTitle"><h2>How We Work</h2><p>A month-on-month approach designed around your business requirement.</p></div>
+<div class="cards">
+<div class="card"><div class="icon">R</div><h3>Research</h3><p>Study your product, market, competition and customer environment.</p></div>
+<div class="card"><div class="icon">S</div><h3>Strategy</h3><p>Define the target segment, geography, customer profile and approach.</p></div>
+<div class="card"><div class="icon">A</div><h3>Approach</h3><p>Meet, connect, present, follow up and develop relevant opportunities.</p></div>
+<div class="card"><div class="icon">G</div><h3>Growth</h3><p>Review progress, refine the approach and build a continuous pipeline.</p></div>
+</div></div></section>
+
+<section id="industries" style="background:#f5f8fb"><div class="container"><div class="sectionTitle"><h2>Industries We Serve</h2><p>We can work across industries based on your product, brand and market requirements.</p></div>
+<div class="industry">
+<div>🏗️<br>Construction</div><div>👕<br>Cloth & Textile</div><div>⚕️<br>Medical & Healthcare</div><div>🎓<br>Education</div><div>🏪<br>Franchisee</div><div>🛒<br>Consumer & FMCG</div><div>⚙️<br>Industrial Products</div><div>🏢<br>Infrastructure</div><div>🤝<br>Channel & Distribution</div><div>📈<br>Other B2B Markets</div></div></div></section>
+
+<section><div class="container"><div class="sectionTitle"><h2>Why GrowViaa?</h2><p>Our promise is simple: understand the market, approach the right people and create real opportunities.</p></div>
+<div class="approach"><div class="quote">“If we shake hands, we take responsibility for taking your brand towards the right market.”</div>
+<div class="list"><div><b>17+ years</b> — experienced business development & market management.</div><div><b>No need to build a separate team</b> — use us as your extended business team.</div><div><b>Month-on-month approach</b> — continuous market development rather than one-time activity.</div><div><b>Research first</b> — decisions based on product, customer and market understanding.</div></div></div></div></section>
+
+<section id="contact" class="cta"><div class="container"><h2>Let's Grow Your Business Together.</h2><p>Share your brand, product or market requirement with us.</p>
+<div class="contact"><a href="tel:+919236931034">📞 +91 9236931034</a><a href="mailto:connect@growviaa.in">✉️ connect@growviaa.in</a><a href="https://www.growviaa.in">🌐 growviaa.in</a></div></div></section>
+<footer>© 2026 GrowViaa • Brand to Business • Research • Strategy • Markets • Growth</footer>
+
+<button class="chatBtn" onclick="toggleChat()" aria-label="Open GrowViaa chat">💬</button>
+<div class="chat" id="chat"><div class="chatHead">GrowViaa Assistant</div><div class="chatBody" id="chatBody">
+<div class="bot">Hello! I’m the GrowViaa Assistant. What would you like to know?</div>
+<div class="choices">
+<button onclick="answer('services')">What does GrowViaa do?</button>
+<button onclick="answer('industries')">Which industries do you serve?</button>
+<button onclick="answer('research')">What is your USP?</button>
+<button onclick="answer('team')">Do I need to hire a sales team?</button>
+<button onclick="answer('contact')">I want to discuss my business</button>
+</div></div><div class="chatFoot">Prefer WhatsApp? <a href="https://wa.me/919236931034" target="_blank">Chat now →</a></div></div>
+<script>
+function toggleChat(){document.getElementById('chat').classList.toggle('open')}
+function answer(type){
+ const body=document.getElementById('chatBody');
+ const replies={
+ services:"GrowViaa helps brands take products and requirements to the right market through research, customer mapping, strategy and market execution.",
+ industries:"We work with Construction, Cloth & Textile, Medical & Healthcare, Education, Franchisee, Consumer/FMCG, Industrial Products, Infrastructure and other B2B markets.",
+ research:"Our USP is Research & Development combined with 17+ years of business-development experience, right-customer mapping and practical market execution.",
+ team:"You can use GrowViaa as an extended business and sales team, reducing the need to build a separate market-development team.",
+ contact:"Great. Call +91 9236931034, email connect@growviaa.in, or use WhatsApp for a quick discussion."
+ };
+ body.innerHTML='<div class="bot">'+replies[type]+'</div><div class="choices"><button onclick="location.href=\'#contact\';toggleChat()">Contact GrowViaa</button><button onclick="window.open(\'https://wa.me/919236931034\',\'_blank\')">WhatsApp</button><button onclick="location.reload()">Ask another question</button></div>';
+}
+</script>
+</body></html>
