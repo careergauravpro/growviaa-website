@@ -38,7 +38,7 @@ a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
 button,input,select,textarea{font:inherit}
 .container{width:min(1180px,92%);margin:auto}
-section{padding:96px 0}
+section{padding:78px 0}
 [id]{scroll-margin-top:90px}
 
 /* NAV */
@@ -59,7 +59,7 @@ section{padding:96px 0}
 /* HERO */
 .hero{position:relative;overflow:hidden;padding:0;background:linear-gradient(135deg,#f8fbff 0%,#eef8f1 58%,#e9f2fb 100%)}
 .hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-180px;top:-220px;background:rgba(32,164,71,.08)}
-.heroIn{position:relative;min-height:610px;display:grid;grid-template-columns:1fr .94fr;gap:42px;align-items:center}
+.heroIn{position:relative;min-height:565px;display:grid;grid-template-columns:1fr .94fr;gap:42px;align-items:center}
 .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--green);font-weight:850;letter-spacing:2px;text-transform:uppercase;font-size:12px}
 .eyebrow:before{content:"";width:28px;height:2px;background:var(--green)}
 .hero h1{font-size:clamp(46px,6vw,78px);line-height:.99;letter-spacing:-3.5px;margin:18px 0 22px;color:var(--navy)}
@@ -74,9 +74,6 @@ section{padding:96px 0}
 .heroVisual{position:relative}
 .heroVisual{padding:8px 0}
 .heroVisual img{width:100%;max-height:410px;object-fit:cover;border-radius:28px;box-shadow:0 30px 75px rgba(7,29,53,.19);border:1px solid rgba(255,255,255,.8)}
-.heroBadge{position:absolute;left:-22px;bottom:26px;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);padding:18px 20px;border-radius:17px;display:flex;align-items:center;gap:13px}
-.heroBadge strong{display:block;font-size:25px;line-height:1;color:var(--navy)}
-.heroBadge span{font-size:12px;color:var(--muted);font-weight:700}
 
 /* TRUST STRIP */
 .trust{padding:0;background:#f7fafc;border-bottom:1px solid var(--line)}
@@ -87,13 +84,13 @@ section{padding:96px 0}
 .trustItem span{display:block;color:var(--muted);font-size:12px;font-weight:750;margin-top:5px}
 
 /* TITLES */
-.sectionHead{max-width:760px;margin-bottom:44px}
+.sectionHead{max-width:760px;margin-bottom:36px}
 .sectionHead.center{margin-left:auto;margin-right:auto;text-align:center}
 .sectionHead h2{font-size:clamp(34px,4vw,50px);line-height:1.08;letter-spacing:-2px;margin:12px 0 15px;color:var(--navy)}
 .sectionHead p{color:var(--muted);font-size:17px;margin:0}
 
 /* ABOUT */
-.aboutGrid{display:grid;grid-template-columns:.92fr 1.08fr;gap:70px;align-items:start}
+.aboutGrid{display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:start}
 .aboutStatement{position:sticky;top:110px}
 .aboutStatement .big{font-size:27px;line-height:1.35;font-weight:750;color:var(--navy);margin:0 0 22px}
 .aboutStatement p{color:var(--muted)}
@@ -109,7 +106,7 @@ section{padding:96px 0}
 /* EXPERIENCE */
 .experience{background:var(--navy);color:#fff;position:relative;overflow:hidden}
 .experience:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-260px;top:-220px;background:rgba(32,164,71,.12)}
-.expGrid{position:relative;z-index:1;display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.expGrid{position:relative;z-index:1;display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
 .experience .sectionHead{margin-bottom:0}
 .experience .sectionHead h2{color:#fff}
 .experience .sectionHead p{color:#b9c8d5}
@@ -127,6 +124,11 @@ section{padding:96px 0}
 .service:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
 .serviceIcon{width:45px;height:45px;border-radius:13px;background:var(--mint);display:flex;align-items:center;justify-content:center;color:var(--green);margin-bottom:20px}
 .serviceIcon svg{width:23px;height:23px}
+.serviceVisual{height:112px;border-radius:15px;overflow:hidden;margin:-2px -2px 18px;position:relative;background:#dfe8ee}
+.serviceVisual img{width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+.service:hover .serviceVisual img{transform:scale(1.045)}
+.serviceVisual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,29,53,.02),rgba(7,29,53,.28))}
+.serviceVisual .serviceIcon{position:absolute;left:12px;bottom:11px;z-index:2;margin:0;width:42px;height:42px;border:1px solid rgba(255,255,255,.75);box-shadow:0 7px 18px rgba(7,29,53,.18)}
 .service h3{font-size:18px;margin:0 0 10px;color:var(--navy)}
 .service p{font-size:14px;color:var(--muted);margin:0}
 
@@ -139,10 +141,20 @@ section{padding:96px 0}
 .processCard h3{font-size:19px;margin:12px 0 8px;color:var(--navy)}
 .processCard p{font-size:14px;color:var(--muted);margin:0}
 
+/* PRACTICAL MARKET VISUALS */
+.marketVisuals{background:#fff}
+.visualGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.visualCard{border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 10px 30px rgba(7,29,53,.06);transition:.25s}
+.visualCard:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.visualCard img{width:100%;height:185px;object-fit:cover}
+.visualCard div{padding:17px 18px 19px}
+.visualCard strong{display:block;color:var(--navy);font-size:16px;margin-bottom:4px}
+.visualCard span{display:block;color:var(--muted);font-size:13px;line-height:1.5}
+
 /* INDUSTRIES */
 .industries{background:#f7fafc}
-.industryGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
-.industry{padding:22px 16px;background:#fff;border:1px solid var(--line);border-radius:17px;text-align:center;transition:.25s}
+.industryGrid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.industry{padding:19px 14px;background:#fff;border:1px solid var(--line);border-radius:17px;text-align:center;transition:.25s}
 .industry:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#c8d9e3}
 .indIcon{width:52px;height:52px;border-radius:15px;margin:0 auto 12px;background:linear-gradient(135deg,#e8f8ee,#eaf3ff);color:var(--green);display:flex;align-items:center;justify-content:center;border:1px solid #d9ebe1;box-shadow:0 6px 16px rgba(7,29,53,.06)}
 .indIcon svg{width:25px;height:25px;stroke-width:1.9}
@@ -152,8 +164,8 @@ section{padding:96px 0}
 .industry span{display:block;font-size:11px;color:var(--muted);margin-top:4px}
 
 /* WHY */
-.whyGrid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:stretch}
-.quoteBox{background:linear-gradient(145deg,#071d35,#123e60);color:#fff;border-radius:20px;padding:30px 34px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 18px 45px rgba(7,29,53,.14);min-height:300px}
+.whyGrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:stretch}
+.quoteBox{background:linear-gradient(145deg,#071d35,#123e60);color:#fff;border-radius:20px;padding:26px 30px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 18px 45px rgba(7,29,53,.14);min-height:260px}
 .quoteBrand{font-size:13px;letter-spacing:1.8px;text-transform:uppercase;color:#63d181;font-weight:850;margin-bottom:14px}
 .quoteMark{font-size:48px;line-height:.6;color:#61cf7f}
 .quoteBox blockquote{font-size:23px;line-height:1.38;margin:15px 0 17px;font-weight:700;letter-spacing:-.4px}
@@ -166,7 +178,7 @@ section{padding:96px 0}
 
 /* PARENT */
 .parent{background:linear-gradient(135deg,#eef8f2 0%,#f4f8fc 52%,#eaf2fb 100%);position:relative;overflow:hidden}
-.parentBox{display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px;padding:30px 34px;border-radius:22px;background:linear-gradient(135deg,#ffffff,#f8fbfd);border:1px solid #dce8e5;box-shadow:0 16px 45px rgba(7,29,53,.08);position:relative}
+.parentBox{display:grid;grid-template-columns:1fr auto;align-items:center;gap:40px;padding:26px 30px;border-radius:22px;background:linear-gradient(135deg,#ffffff,#f8fbfd);border:1px solid #dce8e5;box-shadow:0 16px 45px rgba(7,29,53,.08);position:relative}
 .parentBox:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;border-radius:22px 0 0 22px;background:linear-gradient(180deg,var(--green),var(--blue))}
 .parentBox h3{margin:0 0 7px;color:var(--navy);font-size:21px}
 .parentBox p{margin:0;color:var(--muted);font-size:14px}
@@ -175,7 +187,7 @@ section{padding:96px 0}
 /* CONTACT */
 .contact{background:linear-gradient(135deg,#071d35,#0d3858);color:#fff;position:relative;overflow:hidden}
 .contact:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;right:-230px;top:-180px;background:rgba(32,164,71,.12)}
-.contactGrid{position:relative;z-index:1;display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:start}
+.contactGrid{position:relative;z-index:1;display:grid;grid-template-columns:.8fr 1.2fr;gap:52px;align-items:start}
 .contact .sectionHead{margin-bottom:0}
 .contact .sectionHead h2{color:#fff}
 .contact .sectionHead p{color:#bdcbd7}
@@ -194,7 +206,7 @@ section{padding:96px 0}
 .submit{width:100%;border:0;cursor:pointer;margin-top:5px}
 
 /* FOOTER */
-footer{background:#041525;color:#91a2b1;padding:35px 0 25px}
+footer{background:#041525;color:#91a2b1;padding:30px 0 22px}
 .footerTop{display:flex;justify-content:space-between;gap:25px;align-items:flex-start;flex-wrap:wrap}
 .footerBrand{color:#fff;font-size:22px;font-weight:850}
 .footerBrand span{color:#39bc60}
@@ -236,23 +248,24 @@ footer{background:#041525;color:#91a2b1;padding:35px 0 25px}
   .aboutGrid,.expGrid,.contactGrid,.whyGrid{grid-template-columns:1fr}
   .aboutStatement{position:static}
   .serviceGrid{grid-template-columns:1fr 1fr}
+  .visualGrid{grid-template-columns:1fr 1fr}
   .industryGrid{grid-template-columns:repeat(3,1fr)}
   .processGrid{grid-template-columns:1fr 1fr}
   .processCard:not(:last-child):after{display:none}
 }
 @media(max-width:650px){
-  section{padding:70px 0}
-  .heroIn{padding:58px 0}
+  section{padding:58px 0}
+  .heroIn{padding:52px 0}
   .hero h1{font-size:47px;letter-spacing:-2.5px}
   .heroLead{font-size:17px}
-  .heroBadge{position:static;margin-top:14px;display:inline-flex}
+  .heroBadge{display:none}
   .trustIn{grid-template-columns:1fr 1fr;padding:10px 0}
-  .trustItem{margin:4px;padding:18px 10px}
+  .trustItem{margin:3px;padding:16px 9px}
   .trustItem:nth-child(2){border-right:1px solid var(--line)}
   .trustItem:nth-child(-n+2){border-bottom:1px solid var(--line)}
-  .solutionGrid,.serviceGrid,.processGrid,.expCards,.formGrid{grid-template-columns:1fr}
+  .solutionGrid,.serviceGrid,.processGrid,.expCards,.formGrid,.visualGrid{grid-template-columns:1fr}
   .industryGrid{grid-template-columns:1fr 1fr}
-  .parentBox{grid-template-columns:1fr;padding:26px}
+  .parentBox{grid-template-columns:1fr;padding:23px}
   .parentBadge{white-space:normal;text-align:center}
   .formBox{padding:20px}
   .chat{right:15px}
@@ -359,21 +372,21 @@ footer{background:#041525;color:#91a2b1;padding:35px 0 25px}
       <p>Focused support for companies looking to create demand, enter markets, build relationships and develop business opportunities.</p>
     </div>
     <div class="serviceGrid">
-      <div class="service reveal"><div class="serviceIcon">
+      <div class="service reveal"><div class="serviceVisual"><img loading="lazy" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=82" alt="Business team discussing sales opportunities"><div class="serviceIcon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 19V5M4 19h16"/><path d="m7 15 3-4 3 2 5-7"/></svg>
-      </div><h3>Sales Development</h3><p>Build structured sales opportunities through prospecting, meetings, follow-ups and relationship development.</p></div>
+      </div></div><h3>Sales Development</h3><p>Build structured sales opportunities through prospecting, meetings, follow-ups and relationship development.</p></div>
 
-      <div class="service reveal"><div class="serviceIcon">
+      <div class="service reveal"><div class="serviceVisual"><img loading="lazy" src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=82" alt="Modern business workspace for market expansion"><div class="serviceIcon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 12h18M12 3v18"/><circle cx="12" cy="12" r="8"/></svg>
-      </div><h3>Market Expansion</h3><p>Identify new territories, customer segments and market opportunities aligned with your product and brand.</p></div>
+      </div></div><h3>Market Expansion</h3><p>Identify new territories, customer segments and market opportunities aligned with your product and brand.</p></div>
 
-      <div class="service reveal"><div class="serviceIcon">
+      <div class="service reveal"><div class="serviceVisual"><img loading="lazy" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=82" alt="Business meeting and relationship development"><div class="serviceIcon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20V9l8-5 8 5v11"/><path d="M8 20v-6h8v6M2 20h20"/></svg>
-      </div><h3>Business Development</h3><p>Create connections with prospects, institutions, companies, partners and business decision makers.</p></div>
+      </div></div><h3>Business Development</h3><p>Create connections with prospects, institutions, companies, partners and business decision makers.</p></div>
 
-      <div class="service reveal"><div class="serviceIcon">
+      <div class="service reveal"><div class="serviceVisual"><img loading="lazy" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=82" alt="Team collaboration and channel partnership"><div class="serviceIcon">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="12" r="3"/><circle cx="18" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><path d="m8.7 10.7 6.6-3.4M8.7 13.3l6.6 3.4"/></svg>
-      </div><h3>Channel Development</h3><p>Explore distributors, channel partners and structured routes to market for scalable business development.</p></div>
+      </div></div><h3>Channel Development</h3><p>Explore distributors, channel partners and structured routes to market for scalable business development.</p></div>
     </div>
   </div>
 </section>
@@ -390,6 +403,21 @@ footer{background:#041525;color:#91a2b1;padding:35px 0 25px}
       <div class="processCard reveal"><div class="processNo">STEP 02</div><h3>Research</h3><p>We map market potential, customer groups, decision makers and relevant channels.</p></div>
       <div class="processCard reveal"><div class="processNo">STEP 03</div><h3>Approach</h3><p>We develop a focused route for conversations, partnerships and business opportunities.</p></div>
       <div class="processCard reveal"><div class="processNo">STEP 04</div><h3>Execute</h3><p>We support meetings, follow-ups and market engagement to move opportunities forward.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="marketVisuals">
+  <div class="container">
+    <div class="sectionHead center reveal">
+      <div class="eyebrow">PRACTICAL MARKET WORK</div>
+      <h2>Strategy becomes visible in the market.</h2>
+      <p>From research and meetings to partnerships and execution, we focus on real business conversations.</p>
+    </div>
+    <div class="visualGrid">
+      <div class="visualCard reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=82" alt="Market research and sales discussion"><div><strong>Research &amp; Mapping</strong><span>Understand customers, competitors and opportunities.</span></div></div>
+      <div class="visualCard reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1000&q=82" alt="Business development meeting"><div><strong>Business Conversations</strong><span>Connect with decision makers and potential partners.</span></div></div>
+      <div class="visualCard reveal"><img loading="lazy" src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1000&q=82" alt="Team partnership and execution"><div><strong>Partnership &amp; Execution</strong><span>Move opportunities from discussion towards action.</span></div></div>
     </div>
   </div>
 </section>
